@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Text, StyleSheet, View, ScrollView, Image } from "react-native";
 
 import { images } from "@/constants";
-import CustomButtons from "@/components/CustomButtons";
+import CustomButton from "@/components/CustomButton";
 
 export default function HomeScreen() {
   return (
@@ -41,7 +41,7 @@ export default function HomeScreen() {
             exploration with Aora
           </Text>
 
-          <CustomButtons
+          <CustomButton
             title="Contionue witch email"
             handlePress={() => router.push(`/sign-in`)}
             containerStyles="w-full mt-7"
